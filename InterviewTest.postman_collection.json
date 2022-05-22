@@ -1,0 +1,678 @@
+{
+	"info": {
+		"_postman_id": "21d5d53e-efbc-4b36-ba3e-ecda975de2c1",
+		"name": "InterviewTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7284822"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8002/student/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"M\",\r\n    \"last_name\":\"D\",\r\n    \"mobile_no\":\"9869404549\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/student/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"student",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/addquestions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"subjectid\":\"3\",\r\n        \"subjectname\":\"Computer Science - Java\",\r\n        \"questions\":\"Which is the valid declarations within an interface definition?\",\r\n        \"option_A\":\"public double methoda();\",\r\n        \"option_B\":\"public final double methoda();\",\r\n        \"option_C\":\"static void methoda(double d1);\",\r\n        \"option_D\":\"protected void methoda(double d1);\",\r\n        \"correctanswers\":\"A\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/addmathquestions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"addmathquestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/student/questions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/student/mathquestions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"student",
+						"mathquestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/engquestions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/engquestions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"engquestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/deletequestions/29",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/deletemathquestions/29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"deletemathquestions",
+						"29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/updatequestions/28",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"subjectid\":\"3\",\r\n        \"subjectname\":\"Computer Science - Java\",\r\n        \"questions\":\"Which one of the following will declare an array and initialize it with five numbers?\",\r\n        \"option_A\":\"Array a = new Array(5);\",\r\n        \"option_B\":\"int [] a = {23,22,21,20,19};\",\r\n        \"option_C\":\"int a [] = new int[5];\",\r\n        \"option_D\":\"int [5] array;\",\r\n        \"correctanswers\":\"B\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/updatemathquestions/28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"updatemathquestions",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/student/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile_no\":\"9619173131\",\r\n    \"otp\":\"000000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/student/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"student",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/addmathquestions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n       \r\n        {\r\n        \"subjectid\":\"2\",\r\n        \"subjectname\":\"maths\",\r\n         \"questionno\":\"1\",\r\n        \"questions\":\"The ratio between the length and the breadth of a rectangular park is 3 : 2. If a man cycling along the boundary of the park at the speed of 12 km/hr completes one round in 8 minutes, then the area of the park (in sq. m) is:\",\r\n        \"option_A\":\"15360\",\r\n        \"option_B\":\"153600\",\r\n        \"option_C\":\"30720\",\r\n        \"option_D\":\"307200\",\r\n        \"correctanswers\":\"B\"\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/addmathquestions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"addmathquestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/addengquestions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"subjectid\":\"1\",\r\n        \"subjectname\":\"english\",\r\n        \"questionno\":\"1\",\r\n        \"questions\":\"Antonyms - RELINQUISH\",\r\n        \"option_A\":\"Abdicate\",\r\n        \"option_B\":\"Renounce\",\r\n        \"option_C\":\"Possess\",\r\n        \"option_D\":\"Deny\",\r\n        \"correctanswers\":\"C\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/addengquestions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"addengquestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/addcsjquestions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n        \r\n        {\r\n        \"subjectid\":\"3\",\r\n        \"subjectname\":\"csjava\",\r\n        \"questionno\":\"1\",\r\n        \"questions\":\"Which is the valid declarations within an interface definition?\",\r\n        \"option_A\":\"public double methoda();\",\r\n        \"option_B\":\"public final double methoda();\",\r\n        \"option_C\":\"static void methoda(double d1);\",\r\n        \"option_D\":\"protected void methoda(double d1);\",\r\n        \"correctanswers\":\"A\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/addcsjquestions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"addcsjquestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/mathquestions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/mathquestions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"mathquestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/csjquestions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/csjquestions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"csjquestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/mathquestions/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/mathquestions/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"mathquestions",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/engquestions/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/engquestions/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"engquestions",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/csjquestions/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/csjquestions/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"csjquestions",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/deleteengquestions/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/deleteengquestions/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"deleteengquestions",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/deletecsjquestions/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/deletecsjquestions/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"deletecsjquestions",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/updateengquestions/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"subjectid\":\"3\",\r\n        \"subjectname\":\"Computer Science - Java\",\r\n        \"questions\":\"Which one of the following will declare an array and initialize it with five numbers?\",\r\n        \"option_A\":\"Array a = new Array(5);\",\r\n        \"option_B\":\"int [] a = {23,22,21,20,19};\",\r\n        \"option_C\":\"int a [] = new int[5];\",\r\n        \"option_D\":\"int [5] array;\",\r\n        \"correctanswers\":\"B\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/updateengquestions/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"updateengquestions",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/admin/updatecsjquestions/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"subjectid\":\"3\",\r\n        \"subjectname\":\"Computer Science - Java\",\r\n        \"questions\":\"Which one of the following will declare an array and initialize it with five numbers?\",\r\n        \"option_A\":\"Array a = new Array(5);\",\r\n        \"option_B\":\"int [] a = {23,22,21,20,19};\",\r\n        \"option_C\":\"int a [] = new int[5];\",\r\n        \"option_D\":\"int [5] array;\",\r\n        \"correctanswers\":\"B\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/admin/updatecsjquestions/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"admin",
+						"updatecsjquestions",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile_no\":\"9619173131\",\r\n    \"otp\":\"000000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8002/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Chaitanya\",\r\n    \"last_name\":\"Daund\",\r\n    \"mobile_no\":\"9619173131\",\r\n    \"role\":\"Student\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

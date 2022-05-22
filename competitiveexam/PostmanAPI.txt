@@ -1,0 +1,152 @@
+Postman API
+/admin/questions
+    {
+        "subjectid":"2",
+        "subjectname":"maths",
+        "questions":"The ratio between the length and the breadth of a rectangular park is 3 : 2. If a man cycling along the boundary of the park at the speed of 12 km/hr completes one round in 8 minutes, then the area of the park (in sq. m) is:",
+        "option_A":"15360",
+        "option_B":"153600",
+        "option_C":"30720",
+        "option_D":"307200",
+        "correctanswers":"B"
+    },
+    {
+        "subjectid":"2",
+        "subjectname":"maths",
+        "questions":"An error 2% in excess is made while measuring the side of a square. The percentage of error in the calculated area of the square is:",
+        "option_A":"2%",
+        "option_B":"2.02%",
+        "option_C":"4%",
+        "option_D":"4.04%",
+        "correctanswers":"D"
+    },
+    {
+        "subjectid":"2",
+        "subjectname":"maths",
+        "questions":"The ratio between the perimeter and the breadth of a rectangle is 5 : 1. If the area of the rectangle is 216 sq. cm, what is the length of the rectangle?",
+        "option_A":"16 cm",
+        "option_B":"18 cm",
+        "option_C":"24 cm",
+        "option_D":"None of these",
+        "correctanswers":"B"
+    },
+    {
+        "subjectid":"2",
+        "subjectname":"maths",
+        "questions":"The percentage increase in the area of a rectangle, if each of its sides is increased by 20% is:",
+        "option_A":"40%",
+        "option_B":"42%",
+        "option_C":"44%",
+        "option_D":"46%",
+        "correctanswers":"C"
+    },
+    {
+        "subjectid":"2",
+        "subjectname":"maths",
+        "questions":"A rectangular park 60 m long and 40 m wide has two concrete crossroads running in the middle of the park and rest of the park has been used as a lawn. If the area of the lawn is 2109 sq. m, then what is the width of the road?",
+        "option_A":"2.91 m",
+        "option_B":"3 m",
+        "option_C":"5.82 m",
+        "option_D":"None of these",
+        "correctanswers":"B"
+    },
+    {
+        "subjectid":"1",
+        "subjectname":"english",
+        "questions":"Antonyms - ENORMOUS",
+        "option_A":"Soft",
+        "option_B":"Average",
+        "option_C":"Tiny",
+        "option_D":"Weak",
+        "correctanswers":"C"
+    },
+    {
+        "subjectid":"1",
+        "subjectname":"english",
+        "questions":"Antonyms - COMMISSIONED",
+        "option_A":"Started",
+        "option_B":"Closed",
+        "option_C":"Finished",
+        "option_D":"Terminated",
+        "correctanswers":"D"
+    },
+    {
+        "subjectid":"1",
+        "subjectname":"english",
+        "questions":"Antonyms - ARTIFICIAL",
+        "option_A":"Red",
+        "option_B":"Natural",
+        "option_C":"Truthful",
+        "option_D":"Solid",
+        "correctanswers":"B"
+    },
+    {
+        "subjectid":"1",
+        "subjectname":"english",
+        "questions":"Antonyms - EXODUS",
+        "option_A":"Influx",
+        "option_B":"Home-coming",
+        "option_C":"Return",
+        "option_D":"Restoration",
+        "correctanswers":"A"
+    },
+    {
+        "subjectid":"1",
+        "subjectname":"english",
+        "questions":"Antonyms - RELINQUISH",
+        "option_A":"Abdicate",
+        "option_B":"Renounce",
+        "option_C":"Possess",
+        "option_D":"Deny",
+        "correctanswers":"C"
+    },
+    {
+        "subjectid":"3",
+        "subjectname":"csjava",
+        "questions":"Which one of these lists contains only Java programming language keywords?",
+        "option_A":"class, if, void, long, Int, continue",
+        "option_B":"goto, instanceof, native, finally, default, throws",
+        "option_C":"try, virtual, throw, final, volatile, transient",
+        "option_D":"strictfp, constant, super, implements, do",
+        "correctanswers":"B"
+    },
+    {
+        "subjectid":"3",
+        "subjectname":"csjava",
+        "questions":"Which is a valid keyword in java?",
+        "option_A":"interface",
+        "option_B":"string",
+        "option_C":"Float",
+        "option_D":"unsigned",
+        "correctanswers":"A"
+    },
+    {
+        "subjectid":"3",
+        "subjectname":"csjava",
+        "questions":"Which is a reserved word in the Java programming language?",
+        "option_A":"method",
+        "option_B":"native",
+        "option_C":"subclasses",
+        "option_D":"reference",
+        "correctanswers":"B"
+    },
+    {
+        "subjectid":"3",
+        "subjectname":"csjava",
+        "questions":"Which is the valid declarations within an interface definition?",
+        "option_A":"public double methoda();",
+        "option_B":"public final double methoda();",
+        "option_C":"static void methoda(double d1);",
+        "option_D":"protected void methoda(double d1);",
+        "correctanswers":"A"
+    },
+    {
+        "subjectid":"3",
+        "subjectname":"csjava",
+        "questions":"Which one of the following will declare an array and initialize it with five numbers?",
+        "option_A":"Array a = new Array(5);",
+        "option_B":"int [] a = {23,22,21,20,19};",
+        "option_C":"int a [] = new int[5];",
+        "option_D":"int [5] array;",
+        "correctanswers":"B"
+    }
